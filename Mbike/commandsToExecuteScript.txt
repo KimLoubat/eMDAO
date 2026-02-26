@@ -1,0 +1,3 @@
+Commande à executer dans l'environnement "gemseo2" d'anaconda
+(gemseo2) C:\Users\AdminEtu\Desktop\Mbike>gemseo-study mdo_study.xlsx -o ./gemse -t mdo -x --height 2 --width 5"
+(gemseo2) C:\Users\AdminEtu\Desktop\Mbike>python script.py (-> py ne fonctionne pas car 

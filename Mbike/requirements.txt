@@ -1,0 +1,2 @@
+rdflib
+spacy>=3.0.0

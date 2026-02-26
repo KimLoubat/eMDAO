@@ -1,0 +1,8 @@
+digraph {
+	Aerodynamic -> Maintainability [label=chemical_choice color=black dir=forward fontcolor=black penwidth=1.0]
+	Aerodynamic -> Structure [label="drag,kinetic_power" color=black dir=forward fontcolor=black penwidth=1.0]
+	Structure -> Aerodynamic [label=total_mass color=black dir=forward fontcolor=black penwidth=1.0]
+	Structure -> Maintainability [label="battery_life,battery_power,braking_architecture" color=black dir=forward fontcolor=black penwidth=1.0]
+	Maintainability -> _Maintainability [label=average_repair_time color=black dir=forward fontcolor=black penwidth=1.0]
+	_Maintainability [style=invis]
+}
