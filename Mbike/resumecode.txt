@@ -1,4 +1,0 @@
-Affichage des exigences appliquées sur un sous système donné 
-Sélection d'une des exigences pour l'adapter en contrainte discipline ou fonction
-Construction de la matrice 
-Suggestion de variables relatives à des problèmes d'optimisation déjà résolus  
