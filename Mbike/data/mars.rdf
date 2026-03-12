@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS/"
+     xml:base="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#appliedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#appliedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#PhysicalLaw"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Environment"/>
+        <rdfs:label xml:lang="en">applied in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#appliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#appliesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#System"/>
+        <rdfs:label xml:lang="en">applies to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#componentHasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#componentHasComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Component"/>
+        <rdfs:label xml:lang="en">component has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#constrains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#constrains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constraint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Variable"/>
+        <rdfs:label xml:lang="en">constrains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#constraintIsAnOutputOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#constraintIsAnOutputOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constraint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline"/>
+        <rdfs:label xml:lang="en">constraint is an output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasCategory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#DomainCategory"/>
+        <rdfs:label xml:lang="en">has category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasDesignVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasDesignVariable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Variable"/>
+        <rdfs:label xml:lang="en">has design variable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasFormulation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasFormulation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Formulation"/>
+        <rdfs:label xml:lang="en">has formulation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasInputVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasInputVariable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Variable"/>
+        <rdfs:label xml:lang="en">has input variable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasObjectiveFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasObjectiveFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#ObjectiveFunction"/>
+        <rdfs:label xml:lang="en">has objective function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasOperator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasOperator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constraint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Operator"/>
+        <rdfs:label xml:lang="en">has operator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasOption -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasOption">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Option"/>
+        <rdfs:label xml:lang="en">has option</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasOptionValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasOptionValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#OptionValue"/>
+        <rdfs:label xml:lang="en">has option value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasOutputVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasOutputVariable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Variable"/>
+        <rdfs:label xml:lang="en">has output variable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasQuantity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasQuantity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constraint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Quantity"/>
+        <rdfs:label xml:lang="en">has quantity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasRequirement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement"/>
+        <rdfs:label xml:lang="en">has requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasScenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasScenario">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#XDSMMatrix"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario"/>
+        <rdfs:label xml:lang="en">has scenario</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#hasSystem">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#System"/>
+        <rdfs:label xml:lang="en">has system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#isBearerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#isBearerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Quantity"/>
+        <rdfs:label xml:lang="en">is bearer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#isDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#isDerivedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Standard"/>
+        <rdfs:label xml:lang="en">is derived from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#isRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#isRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Quantity"/>
+        <rdfs:label xml:lang="en">is represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#leads -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#leads">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#StudyAnalysis"/>
+        <rdfs:label xml:lang="en">leads</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#n2HasDiscipline -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#n2HasDiscipline">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#N2Matrix"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline"/>
+        <rdfs:label xml:lang="en">N2 has discipline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#objectiveFunctionIsAnOutputOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#objectiveFunctionIsAnOutputOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#ObjectiveFunction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline"/>
+        <rdfs:label xml:lang="en">objective function is an output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#performsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#performsIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Environment"/>
+        <rdfs:label xml:lang="en">performs in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#requirementHasConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#requirementHasConstraint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constraint"/>
+        <rdfs:label xml:lang="en">requirement has constraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#resultsInN2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#resultsInN2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#StudyAnalysis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#N2Matrix"/>
+        <rdfs:label xml:lang="en">results in N2</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#resultsInXDSM -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#resultsInXDSM">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#resultsInN2"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#StudyAnalysis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#XDSMMatrix"/>
+        <rdfs:label xml:lang="en">results in XDSM</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#scenarioHasConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#scenarioHasConstraint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constraint"/>
+        <rdfs:label xml:lang="en">scenario has constraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#scenarioHasDiscipline -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#scenarioHasDiscipline">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline"/>
+        <rdfs:label xml:lang="en">scenario has discipline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#systemHasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#systemHasComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Component"/>
+        <rdfs:label xml:lang="en">system has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#xdsmHasDiscipline -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#xdsmHasDiscipline">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#n2HasDiscipline"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#XDSMMatrix"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline"/>
+        <rdfs:label xml:lang="en">XDSM has discipline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Component">
+        <rdfs:comment xml:lang="en">A system component is defined as a combination of units or parts independent of, or an independent entity within, a complete operating module, subsystem, and/or system operation (source : DOI &quot;10.1007/BF02222283&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constant">
+        <rdfs:comment xml:lang="en">In mathematics, a constant is a term in an algebraic expression that does not contain any variables and therefore is constant (source : ISBN &quot;978-0-07-179560-9&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">Constant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Constraint">
+        <rdfs:comment xml:lang="en">A constraint is about the restrictions or limits imposed on how the system is designed or can be used (source : ISBN &quot;978-0-12-385206-9&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">Constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Discipline">
+        <rdfs:comment xml:lang="en">Various engineering disciplines abound in design optimisation problems, such as wing design in aerospace engineering, circuit design in electrical engineering, and mechanism design in mechanical engineering (source : ISBN - 978-1-108-98064-7 978-1-108-83341-7). Disciplines can have output variables that serve as input to other disciplines to calculate their own output variables.</rdfs:comment>
+        <rdfs:label xml:lang="en">Discipline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#DomainCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#DomainCategory">
+        <rdfs:comment xml:lang="en">A domain category, such as maintainability or optimisation, can be associated with a requirement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Domain category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Environment">
+        <rdfs:comment xml:lang="en">A system can operate in one or more environments, such as terrestrial, marine, space or aeronautical.</rdfs:comment>
+        <rdfs:label xml:lang="en">Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Formulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Formulation">
+        <rdfs:comment xml:lang="en">The formulation in a XDSM scenario precise the choice of an architecture to implement the MDO problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Formulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#N2Matrix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#N2Matrix">
+        <rdfs:comment xml:lang="en">An N2 matrix represents the dependencies and feedback loops between different engineering disciplines or the functional or physical interfaces between the elements of a system (source : report &quot;TRW-SS-77-04&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">N2 matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#ObjectiveFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#ObjectiveFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Variable"/>
+        <rdfs:comment xml:lang="en">An objective function is a quantity used by designers to determine if one design is better than another. The value of the objective function can be minimised or maximised depending on the optimisation problem (source : ISBN &quot;978-1-108-98064-7 978-1-108-83341-7&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">Objective function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Operator">
+        <rdfs:comment xml:lang="en">An operator can be expressed in a constraint using the following symbols: ‘&gt;’, ‘&lt;’ or ‘=’.</rdfs:comment>
+        <rdfs:label xml:lang="en">Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Option -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Option">
+        <rdfs:comment xml:lang="en">The option is used to pass the formulation options.</rdfs:comment>
+        <rdfs:label xml:lang="en">Option</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#OptionValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#OptionValue">
+        <rdfs:comment xml:lang="en">The options values is used to pass the formulation options.</rdfs:comment>
+        <rdfs:label xml:lang="en">Option value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#PhysicalLaw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#PhysicalLaw">
+        <rdfs:comment xml:lang="en">Physical law can drive the elicitation of system requirements, depending on the environment in which the system will operate. The requirements applied to the system can be, indeed, derived from physical laws that constrain it.</rdfs:comment>
+        <rdfs:label xml:lang="en">Physical law</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Quantity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Quantity">
+        <rdfs:comment xml:lang="en">As bfo:Quality, Quantity is inherent to an other object and exists only if a particular Component object exists. A quantity is represented by qudt:QuantityValue, which expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U (source : &quot;https://qudt.org/2.1/schema/qudt&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Requirement">
+        <rdfs:comment xml:lang="en">A requirement represents the concept of a Requirement, which is a statement that transforms the stakeholder&apos;s user-oriented view of desired capabilities into a technical view of a solution that meets the user&apos;s operational needs (source : ISO/TS &quot;15926-11:2023&quot;). A requirement can be derived from engineering Standards.</rdfs:comment>
+        <rdfs:label xml:lang="en">Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Scenario">
+        <rdfs:comment xml:lang="en">The Scenario defines the formulation, the option and its values, the objective function and possibily the constraint of a XDSM matrix (source : &quot;https://gemseo.readthedocs.io/en/6.0.0/interface/study\_analysis.html&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">Scenario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Standard">
+        <rdfs:comment xml:lang="en">For example, there are ISO standards that have been created by the International organisation for Standardization (ISO), the S-Series developed by the Aerospace \&amp; Defence Industries Association of Europe (ASD), and the NASA Technical Standards System emanating from the National Aeronautics and Space Administration (NASA).</rdfs:comment>
+        <rdfs:label xml:lang="en">Standard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#StudyAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#StudyAnalysis">
+        <rdfs:comment xml:lang="en">The Study Analysis helps define an MDO problem to be solved and can result in an XDSM matrix visualisation that illustrates the data flow between disciplines (source : https://gemseo.readthedocs.io/en/6.0.0/mdo/mdo\_formulations.html\#xdsm).</rdfs:comment>
+        <rdfs:label xml:lang="en">Study analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#System">
+        <rdfs:comment xml:lang="en">A set of things working together as parts of a mechanism or an interconnecting network; a complex whole (source : &quot;Cambridge Dictionary&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#Variable">
+        <rdfs:comment xml:lang="en">A Variable is the name of a value (source : DOI &quot;10.5951/MT.81.6.0420&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">Variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#XDSMMatrix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#XDSMMatrix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adminetu/ontologies/2026/1/MARS#N2Matrix"/>
+        <rdfs:comment xml:lang="en">The XDSM matrix illustrates the data flows, in addition to the elements present in the N2 matrix (source : DOI &quot;10.1007/s00158-012-0763-y&quot;}.</rdfs:comment>
+        <rdfs:label xml:lang="en">XDSM matrix</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
